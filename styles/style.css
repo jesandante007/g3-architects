@@ -58,7 +58,8 @@ nav > ul {
 .feature-details__text,
 .article__text,
 .facts__text,
-.sponsors__text {
+.sponsors__text,
+.our-design__text {
   color: var(--dark3);
   font-weight: 400;
   font-size: 16px;
@@ -82,23 +83,27 @@ nav > ul {
 }
 
 /* ---------------------quick-feature styles-------------------------------- */
-.quick-feature {
+.quick-feature,
+.our-design {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 85px;
 }
-.quick-feature__img {
+.quick-feature__img,
+.our-design__img {
   width: 60%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
-.quick-feature__info {
+.quick-feature__info,
+.our-design__info {
   width: 40%;
   margin-left: 75px;
 }
-.quick-feature__title {
+.quick-feature__title,
+.our-design__title {
   font-weight: 500;
   font-size: 45px;
   line-height: 53px;
@@ -212,6 +217,15 @@ article {
   line-height: 23px;
 }
 
+/* ---------------------our-design styles---------------------------- */
+.our-design__info {
+  margin: 0 75px 0 0;
+}
+.our-design__img > img {
+  border-radius: 8px;
+  box-shadow: 0px 4px 30px rgb(0 0 0 / 6%);
+}
+
 /* ---------------------sponsors styles------------------------------- */
 .sponsors {
   margin-top: 180px;
@@ -251,21 +265,25 @@ article {
   .quick-feature,
   .feature-details,
   .achivement-box-container,
-  .sponsors-icon-container {
+  .sponsors-icon-container,
+  .our-design {
     flex-direction: column;
     gap: 25px;
     height: auto;
   }
-  .quick-feature__img {
+  .quick-feature__img,
+  .our-design__img {
     grid-template-columns: 1fr;
     width: 100%;
   }
   .quick-feature__img > img,
   .feature-details__info,
-  .feature-details__img {
+  .feature-details__img,
+  .our-design__img > img {
     width: 100%;
   }
-  .quick-feature__info {
+  .quick-feature__info,
+  .our-design__info {
     margin-left: 0;
     width: 100%;
     text-align: center;
@@ -274,6 +292,9 @@ article {
     bottom: -70px;
     left: 50%;
     transform: translateX(-50%);
+  }
+  .our-design__info {
+    margin: 0;
   }
   .sponsors-icon-container > img {
     width: 50%;
